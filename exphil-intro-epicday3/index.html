@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Executable Philosophy: A New Philosophical Methodology</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+              <section data-markdown><script type="text/template">
+
+
+## What is Executable Philosophy?
+
+Steven D. Phillips
+
+2015.10.18
+
+Epic Day #3 with Gabrielle Molina
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Talk Outline
+
+- 3 problems with how Philosophy is done today
+
+- Solution to all of them
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## What's Wrong With Philosophy?
+
+1. It's ambiguous
+
+2. Often claims things exist that might not
+
+3. We ignore every branch we're not working in
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Example of Modern Philosophy
+
+> By a "denoting phrase" I mean a phrase such as any one of the
+following: a man, some man, any man, every man, all men, the present
+King of England, the present King of France, the centre of mass of the
+Solar System at the first instant of the twentieth century, the
+revolution of the earth round the sun, the revolution of the sun round
+the earth.  Thus a phrase is denoting solely in virtue of its _form_.
+
+--Bertrand Russell (Nobel Prize-winning philosopher)
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Are These Denoting Phrases?
+
+- "My shoe"
+  - Doesn't exactly match the form of any examples
+
+- "A the"
+  - Isn't grammatical
+
+It makes sense to debate what Russell's theory says in these
+situations, because it isn't clear.
+
+This problem also occurs with people trying to deny absurd
+consequences of their theories.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Problem #1 (with Philosophy): Ambiguity
+
+Russell's description of his theory of denoting is ambiguous.  But how
+specific is specific enough?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Problem #2: Indefensible Existence Claims
+
+Philosophers claim the existence of many things that I don't think we
+can ever have evidence of, and therefore cannot defend the existence
+of.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Strange Things Philosophers Believe In
+
+1. Numbers, lines, and circles in Platonic heaven
+
+2. References between words and objects
+
+3. Moral facts independent of human psychology or evolution
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Why Do They Believe In Such Things?
+
+Because they think we have to!  To explain:
+
+1. How we know about numbers, lines, circles, etc without ever
+experiencing them
+
+2. How language works/the meanings of words
+
+3. The obvious fact that murder is immoral
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Do We _Need_ To Claim These Things Exist?
+
+Is it possible to explain these phemonema without positing non-spatial
+places (like Platonic heaven), references as kind of like objects, and
+strong moral sentiments?
+
+Wouldn't it be nice to be able to definitively show, one way or the
+other, whether or not we need these things to exist?
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Problem #3: Ignoring Other Branches of Philosophy
+
+When working on one branch of Philosophy, philosophers make naive
+assumptions about all the other branches, either consciously or
+unconsciously.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Incompatible Assumptions?
+
+Example: ethics thought experiments commonly begin with something
+like, "suppose 2 runaway trolley cars take off simultaneously in
+opposite directions..."
+
+Subtle problem: Einstein's special relativity tells us that there is
+no such thing as absolute simultaneity -- it's not physically
+possible!  (Must specify reference frame.)
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Too Complex
+
+But it's not their fault; it's too complicated to factor in all of
+Philosophy when doing any Philosophy.
+
+If only we could automatically detect inconsistencies in our claims
+and beliefs...
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## The Solution to Problems 1, 2, 3, and more: Executable Philosophy
+
+- Idea: let's do Philosophy, not in a _natural_ language (like English), but in a _programming_ language
+
+- Executable Philosophy ("ExPhil" for short)
+  - Create Philosophy you can execute like a computer program
+
+- Construct philosophical theories, ideas, and objects _in software_
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## ExPhil (continued)
+
+- All terminology is defined _and well-defined_
+- Compute facts about the logical repercussions of our beliefs
+  - What exists, philosophical theories, and scientific theories
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## What Executable Philosophy Looks Like
+
+```
+def is_even(num):
+    if num % 2 == 0:
+        return True
+    else:
+        return False
+
+
+print is_even(4)  # True
+print is_even(5)  # False
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Another ExPhil Example
+
+```
+def is_a_denoting_phrase(phrase):
+    # Example input: "Some man"
+
+    words = phrase.split()
+    # words == ["Some", "man"]
+
+    if len(words) == 0:
+        return False
+
+    if words[0].lower() in ["a", "some", "any", "every", "all"]:
+        return True
+
+    # TODO: Do more advanced checks here.  Check to see if
+    # second word is a noun?
+    return False
+```
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## is_a_denoting_phrase (continued)
+
+```
+print is_a_denoting_phrase("Some man")  # True
+print is_a_denoting_phrase("My shoe")   # False
+print is_a_denoting_phrase("A the")     # True. Check for nouns?
+print is_a_denoting_phrase("A")         # False. Bug?
+```
+
+We compute facts based upon what we said we mean by each of our terms.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Solving Problem #1: Ambiguity/Specificity
+
+Specific enough: an algorithm implemented (typically as a function) in
+a programming language (such as Python), as seen above.
+
+Debating what a philosophical theory says in a given situation -- that
+is, what a function returns as output when given a certain input --
+will simply end.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Solving Problem #2: Indefensible Existence Claims
+
+Do you _need_ to claim that numbers, lines, circles, references, and
+moral facts exist?  Prove it!
+
+Opponents can try to explain the desired phenomena _without_ claiming
+those things exist.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Solving Problem #3: Ignoring Other Branches
+
+```
+import exphil.objects
+
+from exphil.theories.physics import einsteinian
+
+trolley1 = exphil.objects.TrolleyCar()
+trolley2 = exphil.objects.TrolleyCar()
+
+world = einsteinian.simultaneous(trolley1, {"direction": 1},
+                                 trolley2, {"direction": -1})
+```
+
+The last line throws an error and stops executing (didn't add
+`reference_frame=0`, the rest frame).
+
+The creator of this program didn't have to understand his/her own
+mistake; ExPhil told him/her about it.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Comparison with The Current State of Philosophy
+
+Imagine if mathematicians had never defined their terms!  Rigorous
+math couldn't have even have started!  No axioms, proofs, no theorems
+-- nothing.
+
+Philosophy has _almost_ begun.
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Other Applications of ExPhil
+
+- New Field: Computational Law
+  - Automate lawyers away?
+
+- New Field: Rigoristics
+
+- Belief recommendation for all
+
+</script></section>
+<section data-markdown><script type="text/template">
+
+## Learn More
+
+Let's revolutionize Philosophy: code.executablephilosophy.org
+
+Thank you!
+
+</script></section>
+
+			</div>
+
+		</div>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/0.96/head.min.js"></script> -->
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
